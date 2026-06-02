@@ -41,7 +41,7 @@ My recent research explores the use of LLMs for automated bug repair in XR appli
 
 # 📖 Education
 - *2024 - 2028*: Ph.D. Student in Computer Science, Hong Kong Baptist University (Supervisor: [Dr. Dai Hongning](https://www.comp.hkbu.edu.hk/~henrydai/))
-- *2022 - 2024*: M.S. in Information Technology (Thesis-based), The Hong Kong Polytechnic University (Supervisor: [Dr. Huang Xiao]((https://web.comp.polyu.edu.hk/xiaohuang/)))
+- *2022 - 2024*: M.S. in Information Technology (Thesis-based), The Hong Kong Polytechnic University (Supervisor: [Dr. Huang Xiao](https://web.comp.polyu.edu.hk/xiaohuang/))
 - *2016 - 2020*: B.S. in Computer Science and Technology, Beijing University of Posts and Telecommunications (Supervisor: Dr. Yu Wen)
 
 # 💬 Experience
