@@ -6,9 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Wu Jingwen"
-description              : "Focused on Reliability of VR/AR Software Applications. "
-repository               : "wwwjwww/jingwenwu.github.io"
+title                    : "Jingwen Wu — AI, Software & XR Researcher"
+description              : "PhD researcher building reliable and secure intelligent systems for extended reality."
+url                      : "https://wwwjwww.github.io"
+repository               : "wwwjwww/wwwjwww.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -23,8 +24,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Wu Jingwen"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Long live all the mountains we moved."
-  location         : "Hong Kong(SAR), China"
+  bio              : "Researching reliable XR and secure AI systems."
+  location         : "Hong Kong SAR, China"
   employer         :
   pubmed           : 
   googlescholar    : 

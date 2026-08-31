@@ -1,4 +1,8 @@
 # main links links
 main:
-  - title: "About Me"
-    url: "/#about-me"
+  - title: "Research"
+    url: "/#publications"
+  - title: "Journey"
+    url: "/#journey"
+  - title: "Contact"
+    url: "/#contact"
