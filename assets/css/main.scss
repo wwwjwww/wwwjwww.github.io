@@ -205,6 +205,7 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
 .news-label { display: inline-block; margin-bottom: .55rem; color: var(--teal); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 
 .publication-card--featured { display: grid; grid-template-columns: minmax(250px,.9fr) 1.1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface); box-shadow: 0 16px 40px rgba(23,32,39,.055); }
+.publication-card--featured + .publication-card--featured { margin-top: 1rem; }
 .publication-card__visual { position: relative; min-height: 100%; overflow: hidden; background: #e7ece8; }
 .publication-card__visual img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .publication-card__visual:hover img { transform: scale(1.025); }
