@@ -28,7 +28,7 @@ redirect_from:
   <div class="timeline">
     <article class="timeline__item timeline__item--featured"><time datetime="2026-10-06">Oct 2026</time><div><span class="news-label">New · Preprint</span><p><strong>HarnessSecurity-Bench</strong>, our empirical study and benchmark of security mechanisms in coding agent harnesses, is now available on arXiv.</p></div></article>
     <article class="timeline__item"><time datetime="2026-07-11">Jul 2026</time><p>Our systematic survey of software engineering practices across the complete VR/AR software life cycle is now available on arXiv.</p></article>
-    <article class="timeline__item timeline__item--featured"><time datetime="2025-10">Oct 2025</time><div><span class="news-label">New · ICSE ’26</span><p><strong>XRFix</strong>, our work on performance bug repair for XR applications with large language models, was accepted at the 48th IEEE/ACM International Conference on Software Engineering. See you in Rio!</p></div></article>
+    <article class="timeline__item"><time datetime="2025-10">Oct 2025</time><div><span class="news-label">ICSE ’26</span><p><strong>XRFix</strong>, our work on performance bug repair for XR applications with large language models, was accepted at the 48th IEEE/ACM International Conference on Software Engineering. See you in Rio!</p></div></article>
     <article class="timeline__item"><time datetime="2024-05">May 2024</time><p>Started my PhD journey at HKBU, focusing on AI for Software Engineering and XR systems.</p></article>
     <article class="timeline__item"><time datetime="2024-04">Apr 2024</time><p>Our work on coupled-space attacks against random-walk-based anomaly detection was published in <em>IEEE TIFS</em>.</p></article>
   </div>

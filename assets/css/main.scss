@@ -196,28 +196,30 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
 .section-heading h2 { margin: .2rem 0 0; color: var(--ink); font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 750; }
 .section-index { color: #acb5ae; font: 600 .78rem "Manrope", sans-serif; }
-.timeline { position: relative; }
-.timeline__item { display: grid; grid-template-columns: 7rem 1fr; gap: 1.4rem; padding: 1.3rem 0; border-bottom: 1px solid var(--line); }
-.timeline__item time { padding-top: .15rem; color: var(--ink-soft); font: 700 .76rem "Manrope", sans-serif; text-transform: uppercase; }
-.timeline__item p { margin: 0; color: var(--ink-soft); }
-.timeline__item--featured { padding: 1.5rem; border: 1px solid rgba(15,117,109,.18); border-radius: 1rem; background: rgba(255,255,255,.65); }
+.timeline { position: relative; border-top: 1px solid var(--line); }
+.timeline__item { position: relative; display: grid; grid-template-columns: 7rem 1fr; gap: 1.4rem; padding: 1.35rem 1rem 1.35rem 1.4rem; border-bottom: 1px solid var(--line); }
+.timeline__item:before { position: absolute; top: 1.72rem; left: 0; width: .45rem; height: .45rem; border: 2px solid var(--surface); border-radius: 50%; background: #aab8b3; box-shadow: 0 0 0 1px #aab8b3; content: ""; }
+.timeline__item time { padding-top: .15rem; color: var(--ink-soft); font: 700 .72rem "Manrope", sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.timeline__item p { margin: 0; color: var(--ink-soft); line-height: 1.65; }
+.timeline__item--featured { margin: .8rem 0; padding: 1.35rem 1.4rem; border: 1px solid rgba(15,117,109,.2); border-radius: 1rem; background: linear-gradient(120deg,rgba(255,255,255,.86),rgba(232,246,241,.66)); box-shadow: 0 12px 30px rgba(23,32,39,.035); }
+.timeline__item--featured:before { left: -.25rem; background: var(--teal); box-shadow: 0 0 0 4px rgba(15,117,109,.11); }
 .timeline__item--featured p { color: var(--ink); }
 .news-label { display: inline-block; margin-bottom: .55rem; color: var(--teal); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 
-.publication-card--featured { display: grid; grid-template-columns: minmax(250px,.9fr) 1.1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface); box-shadow: 0 16px 40px rgba(23,32,39,.055); }
-.publication-card--featured + .publication-card--featured { margin-top: 1rem; }
-.publication-card__visual { position: relative; min-height: 100%; overflow: hidden; background: #e7ece8; }
-.publication-card__visual img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-.publication-card__visual:hover img { transform: scale(1.025); }
+.publication-card--featured { display: grid; grid-template-columns: minmax(280px,.82fr) 1.18fr; overflow: hidden; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface); box-shadow: 0 14px 36px rgba(23,32,39,.045); }
+.publication-card--featured + .publication-card--featured { margin-top: 1.25rem; }
+.publication-card__visual { position: relative; display: grid; min-height: 100%; padding: 2.8rem 1.15rem 1.15rem; place-items: center; overflow: hidden; border-right: 1px solid var(--line); background: linear-gradient(145deg,#f7f9f6,#edf2ee); }
+.publication-card__visual img { width: 100%; height: 100%; max-height: 18rem; object-fit: contain; transition: transform .5s ease; }
+.publication-card__visual:hover img { transform: scale(1.018); }
 .venue-badge { position: absolute; top: 1rem; left: 1rem; z-index: 1; padding: .45rem .65rem; border-radius: .45rem; color: var(--ink); background: var(--lime); font: 800 .67rem "Manrope", sans-serif; letter-spacing: .08em; }
-.publication-card__content { padding: 2rem; }
+.publication-card__content { display: flex; flex-direction: column; justify-content: center; padding: 2rem; }
 .publication-card__type { color: var(--teal); font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .publication-card__content h3, .publication-row h3 { margin: .6rem 0 .75rem; line-height: 1.35; }
 .publication-card__content h3 { font-size: 1.25rem; }
 .publication-card__content h3 a, .publication-row h3 a { color: var(--ink); }
-.publication-card__content p { color: var(--ink-soft); font-size: .88rem; }
+.publication-card__content p { margin: .55rem 0 0; color: var(--ink-soft); font-size: .86rem; line-height: 1.65; }
 .publication-card__authors { color: var(--ink) !important; }
-.publication-card__links { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-top: 1.3rem; }
+.publication-card__links { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-top: 1.45rem; }
 .publication-card__links a { color: var(--ink); font-size: .8rem; font-weight: 800; }
 .publication-card__links a:hover { color: var(--teal); }
 .publication-row { display: grid; grid-template-columns: 4rem 1fr auto; gap: 1.2rem; align-items: start; margin-top: 1rem; padding: 1.6rem; border: 1px solid var(--line); border-radius: 1rem; transition: background .2s ease, transform .2s ease; }
@@ -262,7 +264,7 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
   .author__urls-wrapper { margin: 0; }
   .author__urls_sm { padding: .5rem; }
   .publication-card--featured { grid-template-columns: 1fr; }
-  .publication-card__visual { max-height: 22rem; }
+  .publication-card__visual { min-height: 16rem; max-height: 22rem; border-right: 0; border-bottom: 1px solid var(--line); }
 }
 
 @media (max-width: 700px) {
@@ -276,7 +278,7 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
   .hero-panel__actions { align-items: stretch; flex-direction: column; }
   .section-block { padding-top: 4rem; }
   .timeline__item { grid-template-columns: 1fr; gap: .35rem; }
-  .timeline__item--featured { padding: 1.15rem; }
+  .timeline__item--featured { padding: 1.15rem 1.2rem; }
   .journey-grid { grid-template-columns: 1fr; }
   .publication-card__content { padding: 1.3rem; }
   .publication-row { grid-template-columns: 1fr auto; padding: 1.2rem; }
